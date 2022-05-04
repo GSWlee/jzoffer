@@ -3,7 +3,7 @@ package main
 //
 // Find_number
 //  @Description: 判断数组中是否含有目标元素
-//  @param arr
+//  @param arr:
 //  @param target
 //  @return bool
 //
