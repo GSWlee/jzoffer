@@ -24,7 +24,7 @@ func If_duplicate(nums []int) bool {
 			} else {
 				temp := nums[nums[i]]
 				nums[nums[i]] = nums[i]
-				nums[i] = tempb
+				nums[i] = temp
 			}
 		}
 	}
