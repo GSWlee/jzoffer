@@ -22,3 +22,24 @@ func cuttingRope(n int) int {
 	}
 	return dp[n]
 }
+
+//
+//  cuttingRope
+//  @Description: 剪绳子(贪心)
+//  @param n
+//  @return int
+//
+func cuttingRope(n int) int {
+	length := 1
+	if n == 2 {
+		return 1
+	}
+	if n == 3 {
+		return 2
+	}
+	for n >= 5 {
+		length = length * 3 % 1000000007
+		n = n - 3
+	}
+	return length * n % 1000000007
+}
