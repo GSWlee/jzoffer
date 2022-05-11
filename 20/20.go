@@ -1,5 +1,6 @@
 package _0
 
+// 画出自动机，写出状态转换表
 type State int
 type CharType int
 
